@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		52795C641E28F5CB00DA978D /* RelativeConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C621E28F5CB00DA978D /* RelativeConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52795C6C1E2906E900DA978D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52795C6B1E2906E900DA978D /* Aspects.framework */; };
+		52795C6F1E29075600DA978D /* MANRelativeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C6D1E29075600DA978D /* MANRelativeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52795C701E29075600DA978D /* MANRelativeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52795C6E1E29075600DA978D /* MANRelativeConstraint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		52795C621E28F5CB00DA978D /* RelativeConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeConstraints.h; sourceTree = "<group>"; };
 		52795C631E28F5CB00DA978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52795C6B1E2906E900DA978D /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aspects.framework; path = Carthage/Build/iOS/Aspects.framework; sourceTree = "<group>"; };
+		52795C6D1E29075600DA978D /* MANRelativeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANRelativeConstraint.h; sourceTree = "<group>"; };
+		52795C6E1E29075600DA978D /* MANRelativeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANRelativeConstraint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			children = (
 				52795C621E28F5CB00DA978D /* RelativeConstraints.h */,
 				52795C631E28F5CB00DA978D /* Info.plist */,
+				52795C6D1E29075600DA978D /* MANRelativeConstraint.h */,
+				52795C6E1E29075600DA978D /* MANRelativeConstraint.m */,
 			);
 			path = RelativeConstraints;
 			sourceTree = "<group>";
@@ -71,6 +77,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52795C6F1E29075600DA978D /* MANRelativeConstraint.h in Headers */,
 				52795C641E28F5CB00DA978D /* RelativeConstraints.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52795C701E29075600DA978D /* MANRelativeConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +198,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -235,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
