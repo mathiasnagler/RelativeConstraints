@@ -29,12 +29,6 @@
     return self;
 }
 
-- (void)setOtherConstraint:(nullable NSLayoutConstraint *)otherConstraint
-{
-    _otherConstraint = otherConstraint;
-    [self updateConstant];
-}
-
 - (void)setParentView:(nullable UIView *)parentView
 {
     if (self.aspectToken) {
@@ -47,7 +41,7 @@
     self.aspectToken = [parentView aspect_hookSelector:@selector(layoutSubviews)
                                            withOptions:AspectPositionAfter
                                             usingBlock:^(){
-                                                [self updateConstant];
+                                                [self setNeedsConstantUpdate];
                                             }
                                                  error:nil];
 }
@@ -55,18 +49,18 @@
 - (void)setRelationMultiplier:(CGFloat)relationMultiplier
 {
     _relationMultiplier = relationMultiplier;
-    [self updateConstant];
+    [self setNeedsConstantUpdate];
 }
 
-#pragma mark - Private
-
-- (void)updateConstant
+- (void)setNeedsConstantUpdate
 {
-    if (!self.otherConstraint) {
-        return;
-    }
-    
-    self.constant = self.otherConstraint.constant * self.relationMultiplier;
+    self.constant = [self updatedConstant];
+}
+
+- (CGFloat)updatedConstant
+{
+    NSAssert(NO, @"updateConstant needs to be implemented by subclasses.");
+    return 0;
 }
 
 @end

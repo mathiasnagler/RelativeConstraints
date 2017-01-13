@@ -13,8 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MANRelativeConstraint : NSLayoutConstraint
 
 @property (nonatomic, strong, nullable) IBOutlet UIView *parentView;
-@property (nonatomic, strong, nullable) IBOutlet NSLayoutConstraint *otherConstraint;
 @property (nonatomic, assign) IBInspectable CGFloat relationMultiplier;
+
+- (void)setNeedsConstantUpdate;
+- (CGFloat)updatedConstant;
 
 @end
 
