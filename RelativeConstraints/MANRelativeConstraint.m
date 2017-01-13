@@ -40,9 +40,15 @@
     [self setNeedsConstantUpdate];
 }
 
+- (void)setAdditionalConstant:(CGFloat)additionalConstant
+{
+    _additionalConstant = additionalConstant;
+    [self setNeedsConstantUpdate];
+}
+
 - (void)setNeedsConstantUpdate
 {
-    self.constant = [self updatedConstant] * self.relationMultiplier;
+    self.constant = ([self updatedConstant] * self.relationMultiplier) + self.additionalConstant;
 }
 
 - (CGFloat)updatedConstant
