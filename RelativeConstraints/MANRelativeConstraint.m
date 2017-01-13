@@ -17,18 +17,6 @@
 
 @implementation MANRelativeConstraint
 
-- (instancetype)init
-{
-    self = [super init];
-    if (!self) {
-        return nil;
-    }
-    
-    _relationMultiplier = 1.f;
-    
-    return self;
-}
-
 - (void)setParentView:(nullable UIView *)parentView
 {
     if (self.aspectToken) {
