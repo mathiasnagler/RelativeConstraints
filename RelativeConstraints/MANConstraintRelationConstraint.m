@@ -22,7 +22,7 @@
         return self.constant;
     }
     
-    return self.otherConstraint.constant * self.relationMultiplier;
+    return self.otherConstraint.constant;
 }
 
 @end

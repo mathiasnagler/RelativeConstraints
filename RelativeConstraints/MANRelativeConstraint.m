@@ -42,7 +42,7 @@
 
 - (void)setNeedsConstantUpdate
 {
-    self.constant = [self updatedConstant];
+    self.constant = [self updatedConstant] * self.relationMultiplier;
 }
 
 - (CGFloat)updatedConstant
