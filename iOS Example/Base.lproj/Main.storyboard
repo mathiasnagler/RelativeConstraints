@@ -43,6 +43,45 @@
                                     <constraint firstAttribute="height" constant="128" id="mHN-WK-ruK"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vU-qz-VeO">
+                                <rect key="frame" x="94" y="226" width="188" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;-- 10% away from &quot;sceen&quot; edge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-q3-U7X">
+                                        <rect key="frame" x="20" y="57" width="160" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulated device Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-ab-JwI">
+                                        <rect key="frame" x="8" y="8" width="172" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="D4Z-q3-U7X" firstAttribute="leading" secondItem="9vU-qz-VeO" secondAttribute="leading" constant="20" id="17Z-9k-GA5" customClass="MANSizeRelationConstraint">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="relationMultiplier">
+                                                <real key="value" value="0.10000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="relateToHorizontalDimension" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="parentView" destination="9vU-qz-VeO" id="3Vr-lW-0Gt"/>
+                                            <outlet property="sizeRelationView" destination="9vU-qz-VeO" id="Ccb-Fe-3DR"/>
+                                        </connections>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="vUp-ab-JwI" secondAttribute="trailing" constant="8" id="8ro-WJ-Gaj"/>
+                                    <constraint firstAttribute="trailing" secondItem="D4Z-q3-U7X" secondAttribute="trailing" constant="8" id="Jp9-KL-A2N"/>
+                                    <constraint firstAttribute="height" constant="128" id="Psu-M6-ssT"/>
+                                    <constraint firstItem="vUp-ab-JwI" firstAttribute="top" secondItem="9vU-qz-VeO" secondAttribute="top" constant="8" id="QUw-K0-G5I"/>
+                                    <constraint firstItem="D4Z-q3-U7X" firstAttribute="centerY" secondItem="9vU-qz-VeO" secondAttribute="centerY" id="Vbz-RI-SPm"/>
+                                    <constraint firstAttribute="width" constant="188" id="ab0-ZG-eK9"/>
+                                    <constraint firstItem="vUp-ab-JwI" firstAttribute="leading" secondItem="9vU-qz-VeO" secondAttribute="leading" constant="8" id="wxI-na-L2f"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -58,16 +97,19 @@
                                     <outlet property="parentView" destination="8bC-Xf-vdC" id="7uD-rQ-kHf"/>
                                 </connections>
                             </constraint>
+                            <constraint firstItem="9vU-qz-VeO" firstAttribute="top" secondItem="kxF-v6-9Qk" secondAttribute="bottom" constant="48" id="HFV-xM-bwd"/>
                             <constraint firstItem="kxF-v6-9Qk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Muo-rF-Aix"/>
                             <constraint firstItem="vkI-MO-dha" firstAttribute="top" secondItem="kxF-v6-9Qk" secondAttribute="top" id="PMM-z5-hbZ"/>
                             <constraint firstAttribute="trailing" secondItem="JJm-8w-3BY" secondAttribute="trailing" constant="16" id="Vdr-jS-O0q"/>
                             <constraint firstItem="kxF-v6-9Qk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="eSg-da-tfp"/>
+                            <constraint firstItem="9vU-qz-VeO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPh-hM-TSz"/>
                             <constraint firstItem="vkI-MO-dha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="rUc-w6-DNg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JJm-8w-3BY" secondAttribute="bottom" constant="20" id="sam-b1-zkE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="leadingConstraint" destination="Muo-rF-Aix" id="pKQ-rZ-58t"/>
+                        <outlet property="widthConstraint" destination="ab0-ZG-eK9" id="Y43-L7-znG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
