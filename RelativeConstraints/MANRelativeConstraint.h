@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) IBOutlet UIView *parentView;
 @property (nonatomic, assign) IBInspectable CGFloat relationMultiplier;
 @property (nonatomic, assign) IBInspectable CGFloat additionalConstant;
+@property (nonatomic, assign) IBInspectable CGFloat minimumConstant;
+@property (nonatomic, assign) IBInspectable CGFloat maximumConstant;
 
 - (void)setNeedsConstantUpdate;
 

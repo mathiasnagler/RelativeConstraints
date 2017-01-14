@@ -31,6 +31,8 @@
 
 - (void)setDefaults
 {
+    _minimumConstant = nanf(NULL);
+    _maximumConstant = nanf(NULL);
 }
 
 - (void)setParentView:(nullable UIView *)parentView
@@ -62,9 +64,31 @@
     [self setNeedsConstantUpdate];
 }
 
+- (void)setMinimumConstant:(CGFloat)minimumConstant
+{
+    _minimumConstant = minimumConstant;
+    [self setNeedsConstantUpdate];
+}
+
+- (void)setMaximumConstant:(CGFloat)maximumConstant
+{
+    _maximumConstant = maximumConstant;
+    [self setNeedsConstantUpdate];
+}
+
 - (void)setNeedsConstantUpdate
 {
-    self.constant = ([self updatedConstant] * self.relationMultiplier) + self.additionalConstant;
+    CGFloat newConstant = ([self updatedConstant] * self.relationMultiplier) + self.additionalConstant;
+    
+    if (!isnan(self.minimumConstant)) {
+        newConstant = MAX(self.minimumConstant, newConstant);
+    }
+    
+    if (!isnan(self.maximumConstant)) {
+        newConstant = MIN(self.maximumConstant, newConstant);
+    }
+    
+    self.constant = newConstant;
 }
 
 - (CGFloat)updatedConstant
