@@ -24,6 +24,7 @@
 		52795C911E29177E00DA978D /* MANConstraintRelationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52795C8F1E29177E00DA978D /* MANConstraintRelationConstraint.m */; };
 		52D1C96D1E296983000F2AD0 /* MANSizeRelationConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D1C96B1E296983000F2AD0 /* MANSizeRelationConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52D1C96E1E296983000F2AD0 /* MANSizeRelationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1C96C1E296983000F2AD0 /* MANSizeRelationConstraint.m */; };
+		52D1C9731E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D1C9711E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		52795C8F1E29177E00DA978D /* MANConstraintRelationConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANConstraintRelationConstraint.m; sourceTree = "<group>"; };
 		52D1C96B1E296983000F2AD0 /* MANSizeRelationConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANSizeRelationConstraint.h; sourceTree = "<group>"; };
 		52D1C96C1E296983000F2AD0 /* MANSizeRelationConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANSizeRelationConstraint.m; sourceTree = "<group>"; };
+		52D1C9711E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MANRelativeConstraint+Internal.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				52795C621E28F5CB00DA978D /* RelativeConstraints.h */,
 				52795C631E28F5CB00DA978D /* Info.plist */,
 				52795C6D1E29075600DA978D /* MANRelativeConstraint.h */,
+				52D1C9711E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h */,
 				52795C6E1E29075600DA978D /* MANRelativeConstraint.m */,
 				52795C8E1E29177E00DA978D /* MANConstraintRelationConstraint.h */,
 				52795C8F1E29177E00DA978D /* MANConstraintRelationConstraint.m */,
@@ -158,6 +161,7 @@
 				52795C901E29177E00DA978D /* MANConstraintRelationConstraint.h in Headers */,
 				52795C641E28F5CB00DA978D /* RelativeConstraints.h in Headers */,
 				52D1C96D1E296983000F2AD0 /* MANSizeRelationConstraint.h in Headers */,
+				52D1C9731E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

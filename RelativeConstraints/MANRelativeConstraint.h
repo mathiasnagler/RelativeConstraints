@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) IBInspectable CGFloat additionalConstant;
 
 - (void)setNeedsConstantUpdate;
-- (CGFloat)updatedConstant;
 
 @end
 

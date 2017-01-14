@@ -7,8 +7,15 @@
 //
 
 #import "MANSizeRelationConstraint.h"
+#import "MANRelativeConstraint+Internal.h"
 
 @implementation MANSizeRelationConstraint
+
+- (void)setDefaults
+{
+    [super setDefaults];
+    _relateToHorizontalDimension = YES;
+}
 
 - (void)setSizeRelationView:(UIView *)sizeRelationView
 {

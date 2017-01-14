@@ -7,6 +7,7 @@
 //
 
 #import "MANRelativeConstraint.h"
+#import "MANRelativeConstraint+Internal.h"
 #import <Aspects/Aspects.h>
 
 @interface MANRelativeConstraint ()
@@ -16,6 +17,21 @@
 @end
 
 @implementation MANRelativeConstraint
+
++ (void)load
+{
+    [self aspect_hookSelector:@selector(initWithCoder:)
+                  withOptions:AspectPositionAfter
+                   usingBlock:^(id<AspectInfo> aspectInfo) {
+                       MANRelativeConstraint *relativeConstraint = aspectInfo.instance;
+                       [relativeConstraint setDefaults];
+                   }
+                        error:nil];
+}
+
+- (void)setDefaults
+{
+}
 
 - (void)setParentView:(nullable UIView *)parentView
 {
