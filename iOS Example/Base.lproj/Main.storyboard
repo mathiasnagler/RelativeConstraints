@@ -67,6 +67,9 @@
                                                 <real key="value" value="0.10000000000000001"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="relateToHorizontalDimension" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumConstant">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="parentView" destination="9vU-qz-VeO" id="3Vr-lW-0Gt"/>
@@ -74,11 +77,12 @@
                                         </connections>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="vUp-ab-JwI" secondAttribute="trailing" constant="8" id="8ro-WJ-Gaj"/>
-                                    <constraint firstAttribute="trailing" secondItem="D4Z-q3-U7X" secondAttribute="trailing" constant="8" id="Jp9-KL-A2N"/>
+                                    <constraint firstAttribute="trailing" secondItem="D4Z-q3-U7X" secondAttribute="trailing" priority="999" constant="8" id="Jp9-KL-A2N"/>
                                     <constraint firstAttribute="height" constant="128" id="Psu-M6-ssT"/>
                                     <constraint firstItem="vUp-ab-JwI" firstAttribute="top" secondItem="9vU-qz-VeO" secondAttribute="top" constant="8" id="QUw-K0-G5I"/>
                                     <constraint firstItem="D4Z-q3-U7X" firstAttribute="centerY" secondItem="9vU-qz-VeO" secondAttribute="centerY" id="Vbz-RI-SPm"/>
-                                    <constraint firstAttribute="width" constant="188" id="ab0-ZG-eK9"/>
+                                    <constraint firstAttribute="width" priority="999" constant="188" id="ab0-ZG-eK9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="fRF-VA-qcU"/>
                                     <constraint firstItem="vUp-ab-JwI" firstAttribute="leading" secondItem="9vU-qz-VeO" secondAttribute="leading" constant="8" id="wxI-na-L2f"/>
                                 </constraints>
                             </view>
