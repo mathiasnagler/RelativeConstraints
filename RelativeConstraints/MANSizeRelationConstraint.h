@@ -6,7 +6,7 @@
 //  Copyright © 2017 Mathias Nagler. All rights reserved.
 //
 
-#import <RelativeConstraints/RelativeConstraints.h>
+#import "MANRelativeConstraint.h"
 
 @interface MANSizeRelationConstraint : MANRelativeConstraint
 
