@@ -20,9 +20,9 @@
 		52795C881E290E2000DA978D /* RelativeConstraints.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52795C5F1E28F5CB00DA978D /* RelativeConstraints.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52795C8C1E29125B00DA978D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52795C6B1E2906E900DA978D /* Aspects.framework */; };
 		52795C8D1E29125B00DA978D /* Aspects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52795C6B1E2906E900DA978D /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		52795C901E29177E00DA978D /* MANConstraintRelationConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C8E1E29177E00DA978D /* MANConstraintRelationConstraint.h */; };
+		52795C901E29177E00DA978D /* MANConstraintRelationConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C8E1E29177E00DA978D /* MANConstraintRelationConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52795C911E29177E00DA978D /* MANConstraintRelationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52795C8F1E29177E00DA978D /* MANConstraintRelationConstraint.m */; };
-		52D1C96D1E296983000F2AD0 /* MANSizeRelationConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D1C96B1E296983000F2AD0 /* MANSizeRelationConstraint.h */; };
+		52D1C96D1E296983000F2AD0 /* MANSizeRelationConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D1C96B1E296983000F2AD0 /* MANSizeRelationConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52D1C96E1E296983000F2AD0 /* MANSizeRelationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D1C96C1E296983000F2AD0 /* MANSizeRelationConstraint.m */; };
 /* End PBXBuildFile section */
 
