@@ -8,6 +8,7 @@
 
 #import "MANRelativeConstraint.h"
 #import "MANRelativeConstraint+Internal.h"
+#import "NSLayoutConstraint+Internal.h"
 #import <Aspects/Aspects.h>
 
 @interface MANRelativeConstraint ()
@@ -18,15 +19,13 @@
 
 @implementation MANRelativeConstraint
 
-+ (void)load
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    [self aspect_hookSelector:@selector(initWithCoder:)
-                  withOptions:AspectPositionAfter
-                   usingBlock:^(id<AspectInfo> aspectInfo) {
-                       MANRelativeConstraint *relativeConstraint = aspectInfo.instance;
-                       [relativeConstraint setDefaults];
-                   }
-                        error:nil];
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setDefaults];
+    }
+    return self;
 }
 
 - (void)setDefaults
