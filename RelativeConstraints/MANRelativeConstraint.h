@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(RelativeConstraint)
 @interface MANRelativeConstraint : NSLayoutConstraint
 
 @property (nonatomic, strong, nullable) IBOutlet UIView *parentView;

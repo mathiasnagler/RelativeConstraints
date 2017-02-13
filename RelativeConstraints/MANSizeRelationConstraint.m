@@ -17,7 +17,7 @@
     _relateToHorizontalDimension = YES;
 }
 
-- (void)setSizeRelationView:(UIView *)sizeRelationView
+- (void)setSizeRelationView:(nullable UIView *)sizeRelationView
 {
     _sizeRelationView = sizeRelationView;
     [self setNeedsConstantUpdate];

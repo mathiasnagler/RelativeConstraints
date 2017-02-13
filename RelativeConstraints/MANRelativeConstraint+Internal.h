@@ -8,7 +8,7 @@
 
 #import "MANRelativeConstraint.h"
 
-@interface MANRelativeConstraint ()
+@interface MANRelativeConstraint (Internal)
 
 - (void)setDefaults;
 - (CGFloat)updatedConstant;
