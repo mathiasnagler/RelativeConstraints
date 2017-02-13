@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5274510B1E51E82800905C64 /* MANRelativeConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274510A1E51E82800905C64 /* MANRelativeConstraint.swift */; };
 		52795C641E28F5CB00DA978D /* RelativeConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C621E28F5CB00DA978D /* RelativeConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52795C6C1E2906E900DA978D /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52795C6B1E2906E900DA978D /* Aspects.framework */; };
 		52795C6F1E29075600DA978D /* MANRelativeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 52795C6D1E29075600DA978D /* MANRelativeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5274510A1E51E82800905C64 /* MANRelativeConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MANRelativeConstraint.swift; sourceTree = "<group>"; };
 		52795C5F1E28F5CB00DA978D /* RelativeConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RelativeConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52795C621E28F5CB00DA978D /* RelativeConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelativeConstraints.h; sourceTree = "<group>"; };
 		52795C631E28F5CB00DA978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,9 +123,10 @@
 				52795C621E28F5CB00DA978D /* RelativeConstraints.h */,
 				52795C631E28F5CB00DA978D /* Info.plist */,
 				52795C6D1E29075600DA978D /* MANRelativeConstraint.h */,
+				52795C6E1E29075600DA978D /* MANRelativeConstraint.m */,
+				5274510A1E51E82800905C64 /* MANRelativeConstraint.swift */,
 				52D51F001E2CB23100397598 /* NSLayoutConstraint+Internal.h */,
 				52D1C9711E2A3382000F2AD0 /* MANRelativeConstraint+Internal.h */,
-				52795C6E1E29075600DA978D /* MANRelativeConstraint.m */,
 				52795C8E1E29177E00DA978D /* MANConstraintRelationConstraint.h */,
 				52795C8F1E29177E00DA978D /* MANConstraintRelationConstraint.m */,
 				52D1C96B1E296983000F2AD0 /* MANSizeRelationConstraint.h */,
@@ -277,6 +280,7 @@
 				52D1C96E1E296983000F2AD0 /* MANSizeRelationConstraint.m in Sources */,
 				52795C911E29177E00DA978D /* MANConstraintRelationConstraint.m in Sources */,
 				52795C701E29075600DA978D /* MANRelativeConstraint.m in Sources */,
+				5274510B1E51E82800905C64 /* MANRelativeConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +471,7 @@
 		52795C851E290DC900DA978D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -488,6 +493,7 @@
 		52795C861E290DC900DA978D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
